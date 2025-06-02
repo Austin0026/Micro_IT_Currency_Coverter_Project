@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+
+    <!-- Amount input on top -->
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <!-- Currency selectors with flags and swap button -->
+    <div class="converter">
+      <div class="currency-select">
+        <img id="fromFlag" class="flag" src="" alt="From Flag" />
+        <select id="fromCurrency"></select>
+      </div>
+
+      <button type="button" id="swapBtn" title="Swap Currencies">⇄</button>
+
+      <div class="currency-select">
+        <img id="toFlag" class="flag" src="" alt="To Flag" />
+        <select id="toCurrency"></select>
+      </div>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div class="result" id="result">Converted amount will appear here</div>
+  </div>
+
+  <!-- Fullscreen Loader -->
+  <div id="loader" class="loader hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
